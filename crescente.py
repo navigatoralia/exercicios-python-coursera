@@ -7,8 +7,10 @@ def main():
 
     if(n3 > n2 > n1):
         print("crescente")
+    elif(n3 < n2 < n1):
+        print("decrescente")
     else:
-        print("não está em ordem crescente")
+        print("alternante")
 
 #-----
 main()
