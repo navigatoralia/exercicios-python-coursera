@@ -3,7 +3,13 @@
 def main():
 
     x = int(input("Digite um número inteiro: "))
-    if(x % 2 != 0 and x % 3 != 0 and x % 5 != 0 and x % 7 != 0):
+    cont = 0
+    
+    for i in range(2, x):
+        if (x % i == 0):
+            cont += 1
+            
+    if (cont == 0):
         print("primo")
     else:
         print("não primo")
